@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    background-color: peachpuff;
+}
+
+#container {
+    position: relative;
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+}
+
+#container h1 {
+    text-align: center;
+}
+
+#container .responsive-button {
+    display: inline;
+    margin: 10px auto; 
+}
+
+#container button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    text-decoration: none;
+    background-color: #ffcccc; 
+    border: 1px solid #ff6666; 
+    border-radius: 10px; 
+    color: #333; 
+}
+
+#container button:hover {
+    transform: translate(
+        calc(10px - 20px * Math.random()),
+        calc(10px - 20px * Math.random())
+    );
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        height: auto;
+        max-width: 80%; 
+    }
+}
